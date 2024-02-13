@@ -1,0 +1,35 @@
+<style>
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .card {
+        flex: 0 0 calc(33.33% - 10px);
+        background-color: #fff;
+        padding: 20px;
+        margin: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .popup {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-height: 100px; /* Set your desired minimum height for the popup */
+    }
+
+    .card:hover .popup {
+        display: block;
+    }
+</style>
